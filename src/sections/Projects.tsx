@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import {
-  Github,
-  ExternalLink,
+  Github,  
   ArrowRight,
   Shield,
   BarChart3,
