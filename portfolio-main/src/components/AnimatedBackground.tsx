@@ -533,7 +533,7 @@ export const AnimatedBackground = () => {
         const colorSet = flowerColors[Math.floor(Math.random() * flowerColors.length)];
         flowersRef.current.push({
           x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height, // Spread across entire screen
+          y: Math.random() * canvas.height,
           size: Math.random() * 12 + 10,
           speed: Math.random() * 0.2 + 0.15,
           rotation: Math.random() * Math.PI * 2,
@@ -700,12 +700,12 @@ export const AnimatedBackground = () => {
             const factor = 1 - distance / hoverDistance;
             flower.targetBloom = factor;
             if (factor > 0.5) {
-              flower.hasBloomedOnce = true; // Mark as bloomed
+              flower.hasBloomedOnce = true;
             }
           } else if (!flower.hasBloomedOnce) {
-            flower.targetBloom = 0; // Only close if never fully bloomed
+            flower.targetBloom = 0;
           } else {
-            flower.targetBloom = 1; // Stay open if bloomed once
+            flower.targetBloom = 1;
           }
 
           // Slow bloom transition

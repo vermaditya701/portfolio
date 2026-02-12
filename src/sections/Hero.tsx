@@ -93,11 +93,11 @@ export const Hero = () => {
               <div className="absolute -inset-1 bg-gradient-to-br from-violet-500 to-violet-600 dark:from-violet-400 dark:to-violet-500 rounded-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
 
               {/* Image container */}
-              <div className="relative p-2 bg-white dark:bg-zinc-900 rounded-3xl shadow-large">
+              <div className="relative p-2 bg-white dark:bg-zinc-900 rounded-3xl shadow-large overflow-hidden">
                 <img
-                  src="/aditya.jpg"
+                  src="/aditya.jpeg"
                   alt="Aditya Verma"
-                  className="object-cover w-72 h-80 md:w-80 md:h-96 rounded-2xl"
+                  className="object-cover object-center w-72 h-80 md:w-80 md:h-96 rounded-2xl scale-140 translate-x-4"
                 />
               </div>
             </motion.div>
